@@ -25,7 +25,7 @@ To use this module you need a some resources:
 # Imagine that you have same resources: "aws_vpc.example", "aws_subnet.public_subnet" and "aws_key_pair.example"
 
 module "example_instance" {
-    source                      = ...
+    source                      = "github.com/ThunderSSGSS/terraform-devops_instance"
     # Tags  
     name                        = "devops-instance"
     vpc_id                      = aws_vpc.example.id
